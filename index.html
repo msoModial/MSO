@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modial School Online</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: white;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 60px 20px;
+        }
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .slogan {
+            font-size: 1.3em;
+            opacity: 0.9;
+        }
+        .countries {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .country-card {
+            background: rgba(255,255,255,0.15);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            cursor: pointer;
+            transition: transform 0.3s, background 0.3s;
+        }
+        .country-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255,255,255,0.25);
+        }
+        .flag {
+            font-size: 4em;
+            margin-bottom: 10px;
+        }
+        .country-name {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            padding: 40px;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌍 Modial School Online</h1>
+            <p class="slogan">Apprends. Échange. Voyage. Tout en ligne.</p>
+        </header>
+        
+        <div class="countries">
+            <div class="country-card" onclick="alert('Bientôt : Salle de chat Français !')">
+                <div class="flag">🇫🇷</div>
+                <div class="country-name">France</div>
+            </div>
+            <div class="country-card" onclick="alert('Bientôt : English Chat Room !')">
+                <div class="flag">🇬🇧</div>
+                <div class="country-name">United Kingdom</div>
+            </div>
+            <div class="country-card" onclick="alert('Bientôt : Sala de chat España !')">
+                <div class="flag">🇪🇸</div>
+                <div class="country-name">España</div>
+            </div>
+            <div class="country-card" onclick="alert('Bientôt : 日本語チャット !')">
+                <div class="flag">🇯🇵</div>
+                <div class="country-name">日本 (Japon)</div>
+            </div>
+            <div class="country-card" onclick="alert('Bientôt : 中文聊天室 !')">
+                <div class="flag">🇨🇳</div>
+                <div class="country-name">中国 (Chine)</div>
+            </div>
+            <div class="country-card" onclick="alert('Bientôt : غرفة الدردشة العربية !')">
+                <div class="flag">🇸🇦</div>
+                <div class="country-name">العربية (Arabe)</div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>© 2026 Modial School Online - Créé par vous 🚀</p>
+        </footer>
+    </div>
+</body>
+</html>
